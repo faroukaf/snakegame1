@@ -288,3 +288,32 @@ void snakeMove()
   }
   
 }
+
+void mouseClicked() {
+  if(!isStart){
+    //1080/2 + 150, 550 + 50
+    //1080/2 + 150, 620 + 50
+    if (mouseX == 1080/2 + 150){
+      if (mouseY == 550 + 50){
+        isStart = true;
+        return;
+      }else if (mouseY == 550 + 50){
+        guidePage();
+      }
+    }
+  }
+}
+
+
+void guidePage() {
+  text("Controls ", 547, 651);
+  // Start button
+  fill(29,206,240);
+  rect(1080/2,550,150,50); // start button box
+  
+  fill(0);
+  textSize(30);
+ 
+  text("Start Game", 547, 583); // start txt
+}
+
