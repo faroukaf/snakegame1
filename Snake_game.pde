@@ -29,7 +29,7 @@ void setup()
 void Media(){
   snakeimage = loadImage("snakeimage.png");
   snakelogo = loadImage("snakelogo.jpg");
-  BufferedImage mapmodifiable = ImageIO.read(new File("images/main.gif"));
+  //BufferedImage mapmodifiable = ImageIO.read(new File("images/main.gif"));
   snakelogo.resize(60,60);
   snakeimage.resize(1200,800);
   image(snakeimage,0,0);
@@ -308,14 +308,14 @@ void mouseClicked() {
 
 void guidePage() {
   text("Controls ", 547, 651);
-  background(255, 0, 255)
-  textSize(20)
-  text('Right Click to return to MENU', 525, 30)
-  textSize(30)
-  text('1. Rocks will fall from the top of the screen.', 50, 150)
-  text('2. Move your character using arrow keys', 50, 200)
-  text('<- and -> to avoid being crushed.', 80, 240)
-  text('3. The game is over when a rock hits you.', 50, 290)
+  background(255, 0, 255);
+  textSize(20);
+  text("Right Click to return to MENU", 525, 30);
+  textSize(30);
+  text("1. Rocks will fall from the top of the screen.", 50, 150);
+  text("2. Move your character using arrow keys", 50, 200);
+  text("<- and -> to avoid being crushed.", 80, 240);
+  text("3. The game is over when a rock hits you.", 50, 290);
   // Start button
   fill(29,206,240);
   rect(1080/2,550,150,50); // start button box
