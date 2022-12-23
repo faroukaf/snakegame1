@@ -290,7 +290,7 @@ void snakeMove()
   
 }
 
-void mouseClicked() {
+void mousePressed() {
   if(!isStart){
     //1080/2 + 150, 550 + 50
     //1080/2 + 150, 620 + 50
