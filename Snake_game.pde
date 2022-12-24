@@ -10,7 +10,8 @@ snakeObj apple = new snakeObj();
 
 PImage snakeimage;
 PImage snakelogo;
-boolean isStart = false;
+// boolean isStart = false;
+int modeP = 0;
 boolean StartAndControls = true;
 
 /////////////////////////////////////////////////////////////////////////////////
@@ -93,8 +94,8 @@ void PressedStartAndControls(){
 void draw()
 {
   
-  if(!isStart)
-  Media();
+  if(modeP == 0) {Media();}
+  else if(modeP == 1) {guidePage()}
   else{
   if ((frameCount % 5)==0) // do something every 5 frames (frame rate is 60)
   {
@@ -291,16 +292,27 @@ void snakeMove()
 }
 
 void mousePressed() {
-  if(!isStart){
+  if(modeP == 0){
     //1080/2 + 150, 550 + 50
     //1080/2 + 150, 620 + 50
-    if (mouseX == 1080/2 + 150){
-      if (mouseY == 550 + 50){
-        isStart = true;
-        return;
-      }else if (mouseY == 550 + 50){
-        guidePage();
+    if (mouseX >= 1080/2 && mouseX <= 1080/2 + 150){
+      if (mouseY >= 550 && mouseY <= 550 + 50){
+        modeP = 2;
+      }else if (mouseY >= 550 && mouseY <= 550 + 50){
+        modeP = 1;
       }
+    }
+  }
+  if(modeP == 0){
+    //1080/2 + 150, 550 + 50
+    //1080/2 + 150, 620 + 50
+    if (mouseX >= 1080/2 && mouseX <= 1080/2 + 150){
+      if (mouseY >= 550 && mouseY <= 550 + 50){
+        modeP = 2;
+      }
+      // else if (mouseY >= 550 && mouseY <= 550 + 50){
+      //   modeP = 1;
+      // }
     }
   }
 }
