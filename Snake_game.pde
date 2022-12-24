@@ -95,7 +95,7 @@ void draw()
 {
   
   if(modeP == 0) {Media();}
-  else if(modeP == 1) {guidePage()}
+  else if(modeP == 1) {guidePage();}
   else{
   if ((frameCount % 5)==0) // do something every 5 frames (frame rate is 60)
   {
@@ -303,7 +303,7 @@ void mousePressed() {
       }
     }
   }
-  if(modeP == 0){
+  if(modeP == 1){
     //1080/2 + 150, 550 + 50
     //1080/2 + 150, 620 + 50
     if (mouseX >= 1080/2 && mouseX <= 1080/2 + 150){
