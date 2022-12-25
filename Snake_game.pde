@@ -319,10 +319,7 @@ void mousePressed() {
 
 
 void guidePage() {
-  text("Controls ", 547, 651);
   background(255, 0, 255);
-  textSize(20);
-  // text("Right Click to return to MENU", 525, 30);
   textSize(30);
   text("1. If you rotate on yourself , you lose.", 50, 150);
   text("2. If you hit the wall, you lose.", 50, 200);
