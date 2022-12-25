@@ -298,7 +298,7 @@ void mousePressed() {
     if (mouseX >= 1080/2 && mouseX <= 1080/2 + 150){
       if (mouseY >= 550 && mouseY <= 550 + 50){
         modeP = 2;
-      }else if (mouseY >= 550 && mouseY <= 550 + 50){
+      }else if (mouseY >= 620 && mouseY <= 620 + 50){
         modeP = 1;
       }
     }
@@ -324,10 +324,11 @@ void guidePage() {
   textSize(20);
   text("Right Click to return to MENU", 525, 30);
   textSize(30);
-  text("1. Rocks will fall from the top of the screen.", 50, 150);
-  text("2. Move your character using arrow keys", 50, 200);
-  text("<- and -> to avoid being crushed.", 80, 240);
-  text("3. The game is over when a rock hits you.", 50, 290);
+  text("1. If you rotate on yourself , you lose.", 50, 150);
+  text("2. If you hit the wall, you lose.", 50, 200);
+  text("3. If you eat food , your score increase by 1.", 50, 290);
+  text("4. Presse <- and -> to turn left and right.", 80, 240);
+  text("5. Key shift to start a new game after die.", 80, 240);
   // Start button
   fill(29,206,240);
   rect(1080/2,550,150,50); // start button box
