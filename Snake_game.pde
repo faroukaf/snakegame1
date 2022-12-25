@@ -323,9 +323,9 @@ void guidePage() {
   textSize(30);
   text("1. If you rotate on yourself , you lose.", 50, 150);
   text("2. If you hit the wall, you lose.", 50, 200);
-  text("3. If you eat food , your score increase by 1.", 50, 300);
-  text("4. Presse <- and -> to turn left and right.", 50, 350);
-  text("5. Key shift to start a new game after die.", 50, 400);
+  text("3. If you eat food , your score increase by 1.", 50, 250);
+  text("4. Presse <- and -> to turn left and right.", 50, 300);
+  text("5. Key shift to start a new game after die.", 50, 350);
   // Start button
   fill(29,206,240);
   rect(1080/2,550,150,50); // start button box
